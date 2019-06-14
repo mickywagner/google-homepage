@@ -31,16 +31,17 @@ ul {
     list-style-type: none;
     list-style-position: inside;
     padding-left: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+    margin: 0px 10px;
 }
 
 li {
-    padding: 15px 5px;
-    flex: 1;
+    padding: 15px 8px;
+    /* flex: 1; */
     align-items: stretch;
 }
 
@@ -91,6 +92,10 @@ img {
 
 /* Header & Navigation */
 
+nav ul li a {
+    color: black;
+}
+
 nav .pull-left {
     flex: 6;
     padding-right: 500px;
@@ -121,5 +126,14 @@ a:hover {
 /* Toggle Apps Icon */
 
 .fas {
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.fa-user-circle {
+    color: rgb(66,133,244);
+    font-size: 2.5em;
+}
+
+.fa-th:hover {
+    color: black;
 }
