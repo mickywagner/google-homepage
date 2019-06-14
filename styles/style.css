@@ -53,21 +53,28 @@ li {
 
 /* Search bar and logo */
 
-input[type=text] {
+.search-text-input {
     width: 500px;
-    height: 45px;
-    border-radius: 40px;
-    padding: 15px;
-    font-size: 1em;
-    margin: 20px;
+    height: 50px;
+    margin: 0 auto;
     border: 1px solid lightgray;
+    border-radius: 30px;
+}
+
+
+input[type=text] {
+    width: 400px;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
 }
 
 input[type=text]:focus {
     outline: none;
 }
 
-input[type=text]:hover {
+.search-text-input:hover {
    box-shadow: 1px 1px 5px 1px lightgray;
 }
 
@@ -75,7 +82,7 @@ input[type=submit] {
     background: whitesmoke;
     font-size: 1em;
     width: 150px;
-    margin: 5px;
+    margin: 20px 5px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -88,6 +95,13 @@ input[type=submit]:hover {
 
 img {
     width: 270px;
+}
+
+span img {
+    width: 30px;
+    position: relative;
+    top: 8px;
+    left: 20px;
 }
 
 /* Header & Navigation */
