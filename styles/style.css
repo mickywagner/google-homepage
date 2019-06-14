@@ -23,6 +23,7 @@ section {
     flex-flow: column;
     text-align: center;
     justify-content: center;
+    min-width: 800px;
 }
 
 /* Navigation List Flex Container and Items */
@@ -72,6 +73,7 @@ input[type=text] {
 
 input[type=text]:focus {
     outline: none;
+    background: none;
 }
 
 .search-text-input:hover {
@@ -86,6 +88,7 @@ input[type=submit] {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    color: black;
 }
 
 input[type=submit]:hover {
@@ -93,9 +96,13 @@ input[type=submit]:hover {
     color: black;
 }
 
+/* Google Logo */
+
 img {
     width: 270px;
 }
+
+/* Microphone */
 
 span img {
     width: 30px;
