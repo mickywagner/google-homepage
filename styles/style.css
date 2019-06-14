@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* Page container */
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column;
+}
+
+footer, header {
+    flex: 1 1 10px;
+    width: 100%;
+}
+
+section {
+    flex: 6;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Navigation List Flex Container and Items */
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 0.9em;
+    display: flex;
+}
+
+ul li {
+    flex: 1;
+}
+
+
+/* Link styles */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar and logo */
+
+input[type=text] {
+    width: 550px;
+    height: 50px;
+    border-radius: 40px;
+    margin: 10px;
+    border: 1px solid lightgray;
+}
+
+input[type=text]:hover {
+   box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+
+input[type=submit] {
+    background: whitesmoke;
+    font-size: 1em;
+    width: 150px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    border: 1px solid gray;
+}
+
+img {
+    width: 300px;
+}
+
+
+/* Foooter & Navigation */
+
+footer {
+    background-color: whitesmoke;
+    border-top: 1px solid lightgray;
+}
