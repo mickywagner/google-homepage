@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    color: dimgray;
 }
 
 /* Page container */
@@ -12,13 +12,13 @@
     flex-flow: column;
 }
 
-footer, header {
-    flex: 1 1 10px;
+footer, nav {
     width: 100%;
+    min-width: 800px;
 }
 
 section {
-    flex: 6;
+    flex: 5;
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -30,33 +30,40 @@ section {
 ul {
     list-style-type: none;
     list-style-position: inside;
+    padding-left: 0;
     font-size: 0.9em;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
 }
 
-ul li {
+li {
+    padding: 15px 5px;
     flex: 1;
+    align-items: stretch;
 }
 
-
-/* Link styles */
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.pull-left {
+    flex: 6;
+    padding-right: 200px;
+    text-align: left;
 }
 
 /* Search bar and logo */
 
 input[type=text] {
-    width: 550px;
-    height: 50px;
+    width: 500px;
+    height: 45px;
     border-radius: 40px;
-    margin: 10px;
+    padding: 15px;
+    font-size: 1em;
+    margin: 20px;
     border: 1px solid lightgray;
+}
+
+input[type=text]:focus {
+    outline: none;
 }
 
 input[type=text]:hover {
@@ -70,21 +77,49 @@ input[type=submit] {
     margin: 5px;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input[type=submit]:hover {
     border: 1px solid gray;
+    color: black;
 }
 
 img {
-    width: 300px;
+    width: 270px;
 }
 
+/* Header & Navigation */
+
+nav .pull-left {
+    flex: 6;
+    padding-right: 500px;
+    text-align: left;
+}
 
 /* Foooter & Navigation */
 
 footer {
     background-color: whitesmoke;
     border-top: 1px solid lightgray;
+}
+
+footer ul {
+    background-color: whitesmoke;
+}
+
+/* Link styles */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Apps Icon */
+
+.fas {
+    font-size: 2em;
 }
